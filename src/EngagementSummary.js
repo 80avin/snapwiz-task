@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Breadcrumb, Drawer, Layout, Menu, Space, Tabs } from "antd";
+import { Breadcrumb, Drawer, Layout, Menu, Space, Tabs, Typography } from "antd";
 import Sider from "antd/lib/layout/Sider";
 import LineAreaChart from "./LineAreaChart";
 const { Header, Content, Footer } = Layout;
@@ -58,6 +58,9 @@ class EngagementSummary extends Component {
                     <div></div>
                   </div>
                 </div>
+                <Typography.Title level={4} >
+                Activity Timeline
+                </Typography.Title>
                 <LineAreaChart />
               </Content>
             </Layout>

@@ -6,11 +6,18 @@
 [class*="ant-layout"] {
   background: #fff;
 }
+[class*="ant-layout-sider"] {
+  background-color: #001529;
+}
 .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected,
 .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active,
 .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover {
   border: 1px solid black;
   border-bottom: 2px solid white;
+}
+.ant-tabs-nav-wrap {
+  height: 48px;
+  margin-top: 16px;
 }
 .ant-tabs-tab {
   padding: 0 8px;
@@ -18,11 +25,16 @@
 .ant-tabs-tab-active {
   border: 1px solid black;
   border-bottom: none;
+  border-radius: 4px;
+}
+.ant-tabs-top > .ant-tabs-nav::before {
+  border-bottom: 1px solid black;
 }
 .ant-tabs-ink-bar.ant-tabs-ink-bar-animated {
   background-color: white;
 }
 .header-row {
+  margin: 8px 0;
   display: flex;
   width: 100%;
   padding: 8px;
