@@ -1,0 +1,40 @@
+/* @import "antd/dist/antd.dark.css"; */
+@import "antd/dist/antd.compact.css";
+.App {
+  font-family: sans-serif;
+}
+[class*="ant-layout"] {
+  background: #fff;
+}
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover {
+  border: 1px solid black;
+  border-bottom: 2px solid white;
+}
+.ant-tabs-tab {
+  padding: 0 8px;
+}
+.ant-tabs-tab-active {
+  border: 1px solid black;
+  border-bottom: none;
+}
+.ant-tabs-ink-bar.ant-tabs-ink-bar-animated {
+  background-color: white;
+}
+.header-row {
+  display: flex;
+  width: 100%;
+  padding: 8px;
+}
+
+.header-row > div:not(:last-child) {
+  margin-right: 8px;
+}
+
+.paper-text {
+  padding: 24px 8px;
+  border-radius: 4px;
+  flex-grow: 1;
+  background-color: #f3f3f4;
+}
