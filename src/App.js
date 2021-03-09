@@ -4,21 +4,14 @@ import EngagementSummary from "./EngagementSummary";
 import { Layout } from "antd";
 import { Content } from "antd/lib/layout/layout";
 import Sider from "antd/lib/layout/Sider";
+import DashboardTemplate from "./Templates/Dashboard";
 
 export default function App() {
   return (
     <div className="App">
-      <div style={{ minHeight: "500px", minWidth: "500px" }}>
-        {/* <LineAreaChart /> */}
-        <Layout hasSider>
-          <Sider collapsed theme="dark">
-
-          </Sider>
-          <Content>
+      <DashboardTemplate>
             <EngagementSummary />
-          </Content>
-        </Layout>
-      </div>
+      </DashboardTemplate>
     </div>
   );
 }

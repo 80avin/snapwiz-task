@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Breadcrumb, Drawer, Layout, Menu, Space, Tabs, Typography } from "antd";
 import Sider from "antd/lib/layout/Sider";
-import LineAreaChart from "./LineAreaChart";
+import LineAreaChart from "../LineAreaChart";
 const { Header, Content, Footer } = Layout;
 
 class EngagementSummary extends Component {
@@ -16,7 +16,7 @@ class EngagementSummary extends Component {
   };
   render() {
     return (
-      <Layout style={{ padding: "0 50px" }}>
+      <Layout >
         {/* <Header theme="light">
           <div className="logo" />
           <Menu
@@ -34,6 +34,9 @@ class EngagementSummary extends Component {
             </Menu.Item>
           </Menu>
         </Header> */}
+        {/* </Header> */}
+        <Content>
+
         <Tabs defaultActiveKey="1" centered>
           <Tabs.TabPane tab="SUMMARY" key="1">
             <Breadcrumb>
@@ -72,8 +75,7 @@ class EngagementSummary extends Component {
             ACTIVITY BY TEACHER
           </Tabs.TabPane>
         </Tabs>
-        {/* </Header> */}
-        <Content style={{ padding: "0 48px" }}></Content>
+        </Content>
       </Layout>
     );
   }
