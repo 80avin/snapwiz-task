@@ -1,16 +1,18 @@
-// import "antd/dist/antd.css";
 import "./styles.css";
 import EngagementSummary from "./EngagementSummary";
-import { Layout } from "antd";
-import { Content } from "antd/lib/layout/layout";
-import Sider from "antd/lib/layout/Sider";
 import DashboardTemplate from "./Templates/Dashboard";
+import { Redirect, Route, Switch } from "react-router";
+import AssessmentsPage from './AssessmentsPage'
 
 export default function App() {
   return (
     <div className="App">
       <DashboardTemplate>
-            <EngagementSummary />
+        <Switch>
+          <Route exact path="/" component={props => <Redirect to="/engagement" />} />
+          <Route exact path="/engagement" component={EngagementSummary} />
+          <Route exact path="/assessments" component={AssessmentsPage} />
+        </Switch>
       </DashboardTemplate>
     </div>
   );
